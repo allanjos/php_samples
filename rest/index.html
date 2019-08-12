@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="init.js"></script>
+    </head>
+    <body>
+        <h1>Requisições REST:</h1>
+
+        <a href="#" onclick="doGet()">Get list</a>
+
+        <br/><br/>
+
+        <h1>Enviar dados via REST POST:</h1>
+
+        <table border="1">
+            <tr>
+                <th colspan="2">
+                    Adicionar ítem
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nome</label>:
+                    <input type="text" id="form_name" value=""/>
+
+                    <button onclick="addItem()">Adicionar ítem</button>                    
+                </td>
+            </tr>
+        </table>
+
+        <br/><br/>
+
+        <h1>Lista de ítens:</h1>
+
+        <table id="tableItems" border="1">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+            </tr>
+        </table>
+    </body>
+</html>
